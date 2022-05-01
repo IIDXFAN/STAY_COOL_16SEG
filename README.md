@@ -1,7 +1,7 @@
-![Preview](https://stn.s-ul.eu/A8f49Dzl.png)
+![Preview](https://mp01.s-ul.eu/Rmg334fB)
 
-# STAY_COOL
-HTML ticker display for IIDX
+# STAY_COOL_1
+16SEG HTML ticker display for IIDX **WORKS BETTER IN FULLSCREEN**
 
 # Usage
 STAY_COOL comes in two parts: server and client. The server is responsible for reading the game's memory, parsing it and sending it to the client. On the other hand, the client receives the data and displays it on an HTML page.
@@ -10,7 +10,7 @@ STAY_COOL comes in two parts: server and client. The server is responsible for r
 The server needs to be ran with admin priviliges!
 You need to provide additional arguments as well, they are listed below:
 
-Example: `TickerServer.exe -p spice64 -m bm2dx.dll -o 66C7270 -file D:\\test.txt`  
+Example: `TickerServer.exe -p spice64 -m bm2dx.dll -o 6698120`  
 
 `-o 0x10C7C608` REQUIRED - Offset from base module address which points to the ticker.  
 `-p launcher` REQUIRED - Game's process name.  
@@ -25,7 +25,7 @@ Example: `TickerServer.exe -p spice64 -m bm2dx.dll -o 66C7270 -file D:\\test.txt
 `-ae 0x02FFFFFF` - Ending address for `--auto` (default 0x02FFFFFF).  
 
 Easiest way to automatically launch it is to add it to your gamestart.bat like so:  
-`start "Ticker server" "C:\Users\Radio\Documents\Builds\TickerServer\TickerServer.exe" -p spice64 -m bm2dx.dll -o 66C7270 -file D:\\test.txt`  
+`start "Ticker server" "C:\Users\Radio\Documents\Builds\TickerServer\TickerServer.exe" -p spice64 -m bm2dx.dll -o 6698120`  
 
 **Automatic memory lookup**  
 By using `--auto`, you can enable automatic memory lookup. This is only needed if the ticker address changes every boot, for example: Toastertools running IIDX 18 or 19.  
@@ -43,25 +43,4 @@ You can customize to your heart's content using style.css.
 
 # Offsets  
 
-09 0x14EF7E4  
-10 0x154553C  
-11 0x117B474  
-12 0x1524F28  
-13 0x1BF8A30  
-14 0x25427A0  
-15 0x25F2460  
-16 0x257E820  
-17 0x1F99BF0  
-18 0x461978  
-19 0x542408  
-20 0xC7C608  
-21 0x141ACE8  
-22 0x143AC28  
-23 0x1421F58  
-24 0x16A9B68  
-25 0x24AB390  
-26 0x313DAF0  
-27 0x47C5BB0  
-28 0x554B3E0  
-29 (2021-11-17) 0x66C7270  
-30 0x0x858BA62BC5  
+29 (2022-03-01) 0x6698120 
