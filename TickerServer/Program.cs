@@ -225,7 +225,7 @@ namespace TickerServer
             IntPtr bytesRead;
             // tricoro 0x10C7C814 bistrover 0x18554B5EC
             ReadProcessMemory(processHandle, address, buffer, buffer.Length, out bytesRead);
-            string res = ParseString(Encoding.UTF8.GetString(ParseBytes(buffer))).Trim();
+            string res = ParseString(Encoding.UTF8.GetString(ParseBytes(buffer)));
             // Console.WriteLine($"Out: {res.Trim()}");
             return res;
         }
