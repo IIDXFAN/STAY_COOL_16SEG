@@ -227,7 +227,7 @@ namespace TickerServer
             ReadProcessMemory(processHandle, address, buffer, buffer.Length, out bytesRead);
             string res = ParseString(Encoding.UTF8.GetString(ParseBytes(buffer)));
             // Console.WriteLine($"Out: {res.Trim()}");
-            return res;
+            return ((res).Remove(res.Length - 119));
         }
 
         // convert ticker specific codes for dots and the like
@@ -281,7 +281,7 @@ namespace TickerServer
         protected override async void OnOpen()
         {
             Console.WriteLine("Client connected!");
-            Send("CONNECTED!");
+            Send("CONNECTED");
             if (!Program.Initialized)
             {
                 if (Program.ArgsDic.ContainsKey("--auto"))
