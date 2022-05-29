@@ -1,6 +1,6 @@
 ![Preview](https://mp01.s-ul.eu/Rmg334fB)
 
-# STAY_COOL_1
+# STAY_COOL_16_SEG
 16SEG HTML ticker display for IIDX **WORKS BETTER IN FULLSCREEN**
 
 # Usage
@@ -44,3 +44,4 @@ You can customize to your heart's content using style.css.
 # Offsets  
 
 29 (2022-03-01) 0x6698120 
+29 (2022-04-12) 0x669E240
